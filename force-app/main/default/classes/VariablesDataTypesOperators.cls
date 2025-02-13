@@ -115,9 +115,9 @@ public with sharing class VariablesDataTypesOperators {
     public static Boolean isPositive(Integer num) {
 
         if (num > 0) {
-            return true;
-      }
-            return false; // Replace null with the variable you used to store the result
+        return true;
+        } 
+        return false; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -129,7 +129,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-       
+        
         String result = str1 + str2;
         return result; // Replace null with the variable you used to store the result
     }
@@ -196,7 +196,7 @@ public with sharing class VariablesDataTypesOperators {
     //Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
        
-        Integer MILLISECONDS_PER_MINUTE = 60000;
+        final Integer MILLISECONDS_PER_MINUTE = 60000;
         Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; // Replace null with the variable you used to store the result
     }   
